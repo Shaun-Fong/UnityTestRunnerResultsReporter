@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(SolutionDir)\Template&quot; &quot;$(TargetDir)&quot; /e /Y" />
-  </Target>
+    <Exec Command="xcopy &quot;$(ProjectDir)Template&quot; &quot;$(TargetDir)&quot; /e /Y" />  </Target>
 
 </Project>
