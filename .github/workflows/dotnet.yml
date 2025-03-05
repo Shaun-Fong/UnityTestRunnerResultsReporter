@@ -23,5 +23,5 @@ jobs:
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: unity-test-runner-results-reporter-dll
-        path: ${{ github.workspace }}/bin/Release/**/*.dll
+        name: unity-test-runner-results-reporter-release-dir  # Artifact 名称可以修改，更清晰地表明上传的是整个目录
+        path: ${{ github.workspace }}/bin/Release  # 修改 path 指向 Release 目录
